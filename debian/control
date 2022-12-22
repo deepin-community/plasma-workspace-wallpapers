@@ -1,0 +1,25 @@
+Source: plasma-workspace-wallpapers
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Scarlett Moore <sgmoore@kde.org>,
+           Patrick Franz <deltaone@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 0.0.9),
+               pkg-kde-tools (>= 0.15.16),
+               qtbase5-dev (>= 5.4),
+Standards-Version: 4.5.0
+Homepage: https://invent.kde.org/plasma/plasma-workspace-wallpapers
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/plasma-workspace-wallpapers
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/plasma-workspace-wallpapers.git
+Rules-Requires-Root: no
+
+Package: plasma-workspace-wallpapers
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: kde-wallpapers, kde-wallpapers-default
+Replaces: kde-wallpapers, kde-wallpapers-default
+Description: Wallpapers for Plasma 5
+ Wallpapers for integrated use with the Plasma workspace.
